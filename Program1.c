@@ -38,7 +38,7 @@ int main() {
             else if (choice == 'D' || choice == 'd')
                 printf("%c", Circular_Queue_rotate(message[i], shift_value , 0));
         } else {
-            printf("%c", message[i]); // print symbols, spaces as-is
+            printf("%c", message[i]); // print symbols spaces as-is
         }
     }
 
