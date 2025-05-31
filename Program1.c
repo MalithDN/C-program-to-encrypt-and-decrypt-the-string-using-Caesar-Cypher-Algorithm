@@ -28,5 +28,22 @@ int main() {
     printf("Enter your message: ");
     fgets(message, sizeof(message), stdin);
     message[strcspn(message, "\n")] = '\0'; //remove newline
+    
+
+    printf("********************\nResult: ");
+    for (i = 0; message[i] != '\0'; i++) {
+        if (isalpha(message[i])) {
+            if (choice == 'E' || choice == 'e')
+                printf("%c", Circular_Queue_rotate(message[i], shift_value, 1));
+            else if (choice == 'D' || choice == 'd')
+                printf("%c", Circular_Queue_rotate(message[i], shift_value , 0));
+        } else {
+            printf("%c", message[i]); // print symbols spaces as-is
+        }
+    }
+
+    printf("\n");
+
+    return 0;
 
 }
