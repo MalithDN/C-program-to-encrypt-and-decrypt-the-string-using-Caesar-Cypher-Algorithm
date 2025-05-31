@@ -8,9 +8,9 @@
 char Circular_Queue_rotate(char charecter, int shift_value, int encrypt_message) {
     char base = isupper(charecter) ? 'A' : 'a';
     if (encrypt_message)
-        return (char)(base + (charecter - base + shift_value + SIZE) % SIZE);  //process Encrypt message
+        return (char)(base + (charecter - base + shift_value + SIZE) % SIZE);  //process Encrypt message.
     else
-        return (char)(base + (charecter - base - shift_value + SIZE) % SIZE); //process Decrypt message
+        return (char)(base + (charecter - base - shift_value + SIZE) % SIZE); //process Decrypt message.
 }
 
 int main() {
