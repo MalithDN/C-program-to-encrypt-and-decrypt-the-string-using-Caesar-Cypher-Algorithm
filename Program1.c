@@ -21,6 +21,12 @@ int main() {
     printf("Choose (E)ncrypt or (D)ecrypt: ");// user choose E/D
     scanf(" %c", &choice);
 
+    printf("Enter shift key (Any interger): "); //user enter shift key
+    scanf("%d", &shift_value);
 
+    getchar(); //clear leftover newline
+    printf("Enter your message: ");
+    fgets(message, sizeof(message), stdin);
+    message[strcspn(message, "\n")] = '\0'; //remove newline
 
 }
