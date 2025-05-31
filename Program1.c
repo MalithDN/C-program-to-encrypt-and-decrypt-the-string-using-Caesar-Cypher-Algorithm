@@ -13,4 +13,14 @@ char Circular_Queue_rotate(char charecter, int shift_value, int encrypt_message)
         return (char)(base + (charecter - base - shift_value + SIZE) % SIZE); //process Decrypt message.
 }
 
+int main() {
+    char message[200];
+    int shift_value, i;
+    char choice;
 
+    printf("Choose (E)ncrypt or (D)ecrypt: ");// user choose E/D
+    scanf(" %c", &choice);
+
+
+
+}
